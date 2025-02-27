@@ -6,3 +6,7 @@ The process is:
 Update:
 
 -> The new Python code, removes spaces in heades, modificating the previous file to a new one "dbJson_modificado.json"
+
+Second Update:
+
+-> The new Python file rename spanish fields to english and create a new .json -> "dbJson_english.json"
