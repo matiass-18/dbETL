@@ -7,7 +7,7 @@ Created on Thu Feb 27 02:36:39 2025
 
 import json
 
-ruta_json = "C:/Users/Matias/Desktop/Uni/trabajosU/BigData/nuevoETL/dbJson.json"
+ruta_json = "input route"
 
 with open(ruta_json, "r", encoding="utf-8") as f:
     datos = json.load(f)
@@ -17,7 +17,7 @@ def limpiar_clave(clave):
 
 datos_modificados = [{limpiar_clave(k): v for k, v in doc.items()} for doc in datos]
 
-ruta_salida = "C:/Users/Matias/Desktop/Uni/trabajosU/BigData/nuevoETL/dbJson_modificado.json"
+ruta_salida = "output route/dbJson_modificado.json"
 with open(ruta_salida, "w", encoding="utf-8") as f:
     json.dump(datos_modificados, f, indent=4, ensure_ascii=False)
 
